@@ -191,8 +191,6 @@ function getDonatorsUntilDate()
 		console.log("-----------------------------------------------------");
 	}
 
-	searchFor = date.split('/').reverse().join('');
-
 	for (let i = 0; i < donatorsArray.length; ++i) {
 		let donatorDate = donatorsArray[i].lastDonationDate.split('/').reverse().join('');
 
@@ -228,6 +226,7 @@ function listDonators()
 function main() {
 	let option;
 
+	console.clear();
 	console.log("----- SISTEMA DE REGISTRO DE DOADORES DE SANGUE -----\n");
 
 	while (option !== 5) {
